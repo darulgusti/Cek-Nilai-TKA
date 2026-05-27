@@ -107,6 +107,7 @@ function renderResult(siswa, nisn) {
         <div class="mata-pelajaran">Bhs. Indonesia</div>
         <div class="nilai-angka">${biFormatted}</div>
         <div class="nilai-label">Nilai TKA</div>
+        <span class="kriteria-badge kriteria-${escapeHTML(siswa.kriteria_bi.toLowerCase())}">${escapeHTML(siswa.kriteria_bi)}</span>
       </div>
 
       <!-- Matematika -->
@@ -114,6 +115,7 @@ function renderResult(siswa, nisn) {
         <div class="mata-pelajaran">Matematika</div>
         <div class="nilai-angka">${mathFormatted}</div>
         <div class="nilai-label">Nilai TKA</div>
+        <span class="kriteria-badge kriteria-${escapeHTML(siswa.kriteria_mtk.toLowerCase())}">${escapeHTML(siswa.kriteria_mtk)}</span>
       </div>
     </div>
 
