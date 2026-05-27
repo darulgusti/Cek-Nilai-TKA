@@ -62,8 +62,6 @@ function setLoading(isLoading) {
 
 // ---- Render hasil data siswa ----
 function renderResult(siswa, nisn) {
-  const gradeBI   = getGrade(siswa.bahasa_indonesia);
-  const gradeMath = getGrade(siswa.matematika);
   const biFormatted   = Number(siswa.bahasa_indonesia).toFixed(2);
   const mathFormatted = Number(siswa.matematika).toFixed(2);
 
@@ -109,7 +107,6 @@ function renderResult(siswa, nisn) {
         <div class="mata-pelajaran">Bhs. Indonesia</div>
         <div class="nilai-angka">${biFormatted}</div>
         <div class="nilai-label">Nilai TKA</div>
-        <span class="grade-badge ${gradeBI.cls}">${gradeBI.grade} — ${gradeBI.label}</span>
       </div>
 
       <!-- Matematika -->
@@ -117,7 +114,6 @@ function renderResult(siswa, nisn) {
         <div class="mata-pelajaran">Matematika</div>
         <div class="nilai-angka">${mathFormatted}</div>
         <div class="nilai-label">Nilai TKA</div>
-        <span class="grade-badge ${gradeMath.cls}">${gradeMath.grade} — ${gradeMath.label}</span>
       </div>
     </div>
 
